@@ -16,7 +16,7 @@
   become: yes
   become_user: '{{ admin_user }}'
   # core.autocrlf=input prevents https://github.com/robbyrussell/oh-my-zsh/issues/4402
-  command: 'git clone -c core.autocrlf=input --depth=1 https://github.com/justusschock/ohmyzsh-theme-passion.git ~{{ admin_user }}/.oh-my-zsh/custom/themes/passion-theme'
+  command: 'git clone -c core.autocrlf=input --depth=1 https://github.com/justusperillieux/ohmyzsh-theme-passion.git ~{{ admin_user }}/.oh-my-zsh/custom/themes/passion-theme'
   when: not custom_themes_dir.stat.exists
 
 - name: create symlink passion-theme
