@@ -21,7 +21,7 @@ fi
 if [ ! -d ${HOME}/.oh-my-zsh/custom/themes/passion-theme ]
 then
   # core.autocrlf=input prevents https://github.com/robbyrussell/oh-my-zsh/issues/4402
-  git clone -c core.autocrlf=input --depth=1 https://github.com/justusschock/ohmyzsh-theme-passion.git ${HOME}/.oh-my-zsh/custom/themes/passion-theme
+  git clone -c core.autocrlf=input --depth=1 https://github.com/justusperillieux/ohmyzsh-theme-passion.git ${HOME}/.oh-my-zsh/custom/themes/passion-theme
 fi
 
 if [ ! -d ${HOME}/.oh-my-zsh/custom/themes/spaceship-theme ]
@@ -43,7 +43,7 @@ then
 fi
 
 # Init and apply dotfiles
-chezmoi init --apply justusschock
+chezmoi init --apply justusperillieux
 chezmoi update
 
 # Install rosetta for all the intel stuff
@@ -65,4 +65,4 @@ fi
 /bin/bash ${HOME}/.config/.osx
 
 rm -rf ${HOME}/.local/share/chezmoi
-git clone git@github.com:justusschock/dotfiles.git ${HOME}/.local/share/chezmoi
+git clone git@github.com:justusperillieux/dotfiles.git ${HOME}/.local/share/chezmoi
